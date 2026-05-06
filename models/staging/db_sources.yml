@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+
+  - name: GOOGLE_SHEET # name of the source 
+    schema: GOOGLE_SHEET # this is the schema our raw data lives in
+    database: DB25_BRONZE_DB_GOOGLE_SHEET_USERS # this is the name of our database
+
+    tables:
+
+      - name: users
+        columns:
+          - name: Nombre
+          - name: DNI
+          - name: email
+          - name: fecha_alta_sistema
